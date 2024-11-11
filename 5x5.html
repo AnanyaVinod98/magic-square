@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5x5</title>
+    <link rel="stylesheet" href="./styles/5x5.css">
+</head>
+<body>  
+    <header>
+        <h1>Magic Square Game</h1>
+        <a class="home-button" href="./index.html">Home</a>
+    </header>
+<h2 style="text-align: center;">5x5 Magic Square (Sum = 65)</h2>
+
+<div class="grid" id="grid">
+    <!-- Cells will be dynamically generated here -->
+</div>
+
+<!-- Draggable Numbers -->
+<div id="numbers" style="display: flex; gap: 10px; justify-content: center; margin-top: 20px;">
+    <!-- Draggable numbers will be dynamically generated here -->
+</div>
+
+<!-- Control Buttons -->
+<div style="text-align: center; margin-top: 20px;">
+    <button id="checkButton" class="btn">Check Solution</button>
+    <button id="resetButton" class="btn">Reset</button>
+</div>
+
+<!-- Feedback Message -->
+<div id="feedbackMessage"></div>
+
+<!-- Success Modal -->
+<div id="successModal" class="modal">
+    <div class="modal-content">
+        <h3>Congratulations!</h3>
+        <p>You have completed the magic square.</p>
+        <a id="nextLevelButton" class="btn" href="./index.html">Go to Home</a>
+    </div>
+</div>
+
+    <script src="./scripts/5x5.js"></script>
+</body>
+</html>
