@@ -74,6 +74,7 @@ a {
   line-height: 50px;
   cursor: pointer;
   user-select: none;
+  -webkit-user-select: none;
 }
 
 /* Success Modal styles */
