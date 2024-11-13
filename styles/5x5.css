@@ -1,41 +1,74 @@
+/* header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+    color: #000;
+  padding: 18px 20px;
+  font-size: 24px;
+  box-shadow: 0 1px 9px 2px #888;
+} */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
-    color: #000;
-    padding: 18px 20px;
-  font-size: 24px;
-  box-shadow: 0 1px 9px 2px #888;
+    padding: 5px 0;
+    background: #fff;
+    box-shadow: 0 1px 9px 2px #888;
+    width: 100%;
+  }
+  img {
+    width: 110px;
+    height: 110px;
+  }
+  footer {
+    position: fixed;
+  bottom: 0;
+    padding: 30px 0;
+    background-color: #3e6a58;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+  }
+  .container-wrapper {
+    padding-bottom: 60px;
+  }
+  header h1 {
+   padding-right: 20px;
+  }
+  h2 {
+    margin-top: 40px;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 24px;
-}
-h2 {
-    margin-top: 65px;
-}
-
-.home-button {
-    background-color: #4CAF50;
+  .home-button {
+    background-color: #3e6a58;
     color: white;
     border: none;
-    padding: 8px 16px;
-    border-radius: 5px;
+    padding: 8px 23px 8px 17px;
+    font-size: 20px;
+    border-radius: 0 5px 5px 0;
     cursor: pointer;
-}
-a {
-    text-decoration: none;
+    display: inline-block;
+    margin-top: 28px;
   }
-.home-button:hover {
-    background-color: #45a049;
-}
-body {
-    background: linear-gradient(to right, #4caf5078, #00ffc600);
-    margin: 0 auto;
+  
+  .home-button:hover {
+    background-color: #3e6a58b8;
   }
-.grid {
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    height: 100vh;
+    margin: 0;
+    background: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .grid {
     display: grid;
     grid-template-columns: repeat(5, 80px);
     grid-template-rows: repeat(5, 80px);
@@ -59,10 +92,13 @@ body {
     background-color: #f4f4f4;
     color: #333;
     cursor: pointer;
-}
-
-/* Style for draggable numbers */
-.number {
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  /* Style for draggable numbers */
+  .number {
     width: 50px;
     height: 50px;
     background-color: #4CAF50;
@@ -73,10 +109,12 @@ body {
     cursor: pointer;
     user-select: none;
     -webkit-user-select: none;
-}
-
-/* Success Modal styles */
-.modal {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  /* Success Modal styles */
+  .modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -85,18 +123,20 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
-}
-
-.modal-content {
+  }
+  
+  .modal-content {
     background-color: #fefefe;
     margin: 15% auto;
-    padding: 20px;
+    padding: 20px 20px 30px;
     border: 1px solid #888;
-    width: 30%;
+    width: 45%;
     text-align: center;
-}
-
-.btn {
+  }
+  .modal-content p {
+    font-size: 20px;
+  }
+  .btn {
     padding: 10px 20px;
     background-color: #4CAF50;
     color: white;
@@ -104,13 +144,15 @@ body {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
-}
-
-.btn:hover {
+    font-size: 16px;
+    display: inline-block;
+  }
+  
+  .btn:hover {
     background-color: #45a049;
-}
-
-#feedbackMessage {
+  }
+  
+  #feedbackMessage {
     margin-top: 10px;
     font-size: 18px;
     text-align: center;
