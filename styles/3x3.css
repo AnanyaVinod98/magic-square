@@ -79,7 +79,7 @@ body {
   border: 2px solid #333;
   font-size: 24px;
   font-weight: bold;
-  background-color: #f4f4f4;
+  background-color: #ffe2e2;
   color: #333;
   cursor: pointer;
 }
@@ -94,7 +94,7 @@ a {
 .number {
   width: 50px;
   height: 50px;
-  background-color: #4CAF50;
+  background-color: #a35959;
   color: white;
   border-radius: 50%;
   text-align: center;
@@ -131,7 +131,7 @@ a {
 }
 .btn {
   padding: 10px 20px;
-  background-color: #4CAF50;
+  background-color: #16665c;
   color: white;
   border: none;
   border-radius: 5px;
@@ -142,7 +142,7 @@ a {
 }
 
 .btn:hover {
-  background-color: #45a049;
+  background-color: #16665cbf;
 }
 
 #feedbackMessage {
