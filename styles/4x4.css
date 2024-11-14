@@ -64,11 +64,16 @@ header {
     grid-template-columns: repeat(4, 23%);
     grid-template-rows: repeat(4, 23%);
     gap: 8px;
-    margin: 20px auto;
+    margin: 20px 20px;
     max-width: 420px;
 }
 #numbers {
-    flex-wrap: wrap;
+  display: grid !important;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+  grid-template-columns: repeat(4, 23%);
+    grid-template-rows: repeat(4, 23%);
   }
 /* Style for each cell */
 .cell {
@@ -149,14 +154,21 @@ header {
     text-align: center;
     color: red;
   }
-@media screen and(min-width: 600px) {
-    /* body {
-        height: 100vh;
-    } */
-    /* header {
-      position: relative;
-    } */
+  .group {
+    display: flex;
+      width: 90%;
+      justify-content: center;
+      gap: 0;
+      margin: 0 auto;
+      flex-direction: column;
+  }
+  @media (min-width: 700px) {
+  
     .container-wrapper {
-      padding-bottom: 60px;
-    }
-}
+       padding-bottom: 80px;
+   }
+    .group {
+       flex-direction: row;
+       gap: 50px;
+   }
+   }
